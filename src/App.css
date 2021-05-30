@@ -2,37 +2,45 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #FFC112;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  background-color:#11a209;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#to-do-form input{
+  background-color:rgb(70, 70, 4);
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+  color: antiquewhite;
+}
+#to-do-form input::placeholder {
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+#to-do-form input:focus,#to-do-form button:focus {  
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border:0;
+  background-color:rgb(254, 254, 254);
+  cursor: pointer;
+}
+
+#to-do-form button:focus{
+  outline: none;
 }
